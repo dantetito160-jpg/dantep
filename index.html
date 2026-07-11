@@ -57,6 +57,25 @@
         margin-top: 10px;
     }
 
+    .resume-btn {
+        background: #0a1a3c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 3px solid #0a1a3c;
+    }
+
     footer {
         text-align: center;
         padding: 20px;
@@ -84,6 +103,7 @@ function switchLang(lang) {
 
 <nav>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -94,7 +114,13 @@ function switchLang(lang) {
     <h2 data-lang="es" style="display:none;">Bienvenido a Mi Portafolio</h2>
 
     <p data-lang="en">I am a Mechanical Engineer and a graduate of FIU with a strong passion for design, simulation, and problem‑solving.</p>
-    <p data-lang="es" style="display:none;">Soy Ingeniero Mecánico, graduado de la Universidad Internacional de Florida (FIU) con una fuerte pasión por el diseño, simulación y resolución de problemas.</p>
+    <p data-lang="es" style="display:none;">Soy Ingeniero Mecánico, graduado de FIU con una fuerte pasión por el diseño, simulación y resolución de problemas.</p>
+
+    <!-- Resume Button -->
+    <a class="resume-btn" href="Dante_Resume.pdf" target="_blank" data-lang="en">Download Resume</a>
+    <a class="resume-btn" href="Dante_Resume.pdf" target="_blank" data-lang="es" style="display:none;">Descargar Currículum</a>
+
+    <br><br>
 
     <button class="lang-btn" onclick="switchLang('en')">English</button>
     <button class="lang-btn" onclick="switchLang('es')">Español</button>
@@ -105,33 +131,52 @@ function switchLang(lang) {
     <h2 data-lang="es" style="display:none;">Sobre Mí</h2>
 
     <p data-lang="en">
-        I am a Mechanical Engineer graduated Florida International University.  
+        I am a Mechanical Engineer and a graduate of Florida International University.  
         I combine creativity, engineering thinking, and discipline to solve real‑world problems.
     </p>
 
     <p data-lang="es" style="display:none;">
-        Soy estudiante de Ingeniería Mecánica en Florida International University.  
+        Soy Ingeniero Mecánico y egresado de FIU.  
         Combino creatividad, pensamiento ingenieril y disciplina para resolver problemas reales.
     </p>
+</section>
+
+<section id="experience">
+    <h2 data-lang="en">Experience</h2>
+    <h2 data-lang="es" style="display:none;">Experiencia</h2>
+
+    <ul data-lang="en">
+        <li>Engineering simulations and performance analysis using Python</li>
+        <li>CAD modeling and mechanical design using SolidWorks</li>
+        <li>Hydrostatic and fluid mechanics calculations</li>
+        <li>Technical reporting and engineering documentation</li>
+        <li>Project coordination and engineering problem‑solving</li>
+    </ul>
+
+    <ul data-lang="es" style="display:none;">
+        <li>Simulaciones de ingeniería y análisis de rendimiento usando Python</li>
+        <li>Modelado CAD y diseño mecánico con SolidWorks</li>
+        <li>Cálculos de hidrostática y mecánica de fluidos</li>
+        <li>Reportes técnicos y documentación de ingeniería</li>
+        <li>Coordinación de proyectos y resolución de problemas de ingeniería</li>
+    </ul>
 </section>
 
 <section id="projects">
     <h2 data-lang="en">Projects</h2>
     <h2 data-lang="es" style="display:none;">Proyectos</h2>
 
-    <ul data-lang="en">
-        <li>SolidWorks mechanical part modeling</li>
-        <li>Python engineering simulations</li>
-        <li>MATLAB numerical analysis</li>
-        <li>CAD drawings and engineering sketches</li>
-    </ul>
+    <h3 data-lang="en">Water Distillation System</h3>
+    <h3 data-lang="es" style="display:none;">Sistema de destilación de agua impulsado por energía solar</h3>
+    <img src="pump_project.jpg" class="project-img" alt="Water Distillation System">
 
-    <ul data-lang="es" style="display:none;">
-        <li>Modelado de piezas mecánicas en SolidWorks</li>
-        <li>Simulaciones de ingeniería en Python</li>
-        <li>Análisis numérico en MATLAB</li>
-        <li>Dibujos CAD y bocetos de ingeniería</li>
-    </ul>
+    <h3 data-lang="en">Autonomous Exploration Using LIDAR and Differential Drive Kinematics</h3>
+    <h3 data-lang="es" style="display:none;">Exploración Autónoma mediante LIDAR y Cinemática de Tracción Diferencial</h3>
+    <img src="hydrostatic_project.jpg" class="project-img" alt="Autonomous Exploration Using LIDAR and Differential Drive Kinematics">
+
+    <h3 data-lang="en">Planetary Wind Turbine</h3>
+    <h3 data-lang="es" style="display:none;">Turbina eólica planetaria</h3>
+    <img src="cad_project.jpg" class="project-img" alt="Planetary Wind Turbine">
 </section>
 
 <section id="skills">
@@ -143,7 +188,10 @@ function switchLang(lang) {
         <li>Python (NumPy, Matplotlib)</li>
         <li>MATLAB</li>
         <li>Engineering Visualization</li>
-        
+        <li>Excel (data analysis, reporting, metrics)</li>
+        <li>Word (documentation, reports)</li>
+        <li>PowerPoint (presentations)</li>
+
     </ul>
 
     <ul data-lang="es" style="display:none;">
@@ -151,7 +199,10 @@ function switchLang(lang) {
         <li>Python (NumPy, Matplotlib)</li>
         <li>MATLAB</li>
         <li>Visualización de Ingeniería</li>
-       
+        <li>Microsoft Excel (análisis de datos, reportes y métricas operativas)  </li>
+        <li>Microsoft Word (documentación técnica e informes profesionales)  </li>
+        <li>Microsoft PowerPoint (presentaciones técnicas y ejecutivas)</li>
+
     </ul>
 </section>
 
@@ -159,8 +210,8 @@ function switchLang(lang) {
     <h2 data-lang="en">Contact</h2>
     <h2 data-lang="es" style="display:none;">Contacto</h2>
 
-    <p data-lang="en">Email: dmama003@fiu.edu</p>
-    <p data-lang="es" style="display:none;">Correo: dmama003@fiu.edu</p>
+    <p data-lang="en">Email: dantemamani160@gmail.com or dmama003@fiu.edu</p>
+    <p data-lang="es" style="display:none;">Correo: dantemamani160@gmail.com o dmama003@fiu.edu</p>
 
     <p data-lang="en">LinkedIn: https://www.linkedin.com/in/dante-mamani-tito-9447433b3/</p>
     <p data-lang="es" style="display:none;">LinkedIn: https://www.linkedin.com/in/dante-mamani-tito-9447433b3/</p>
