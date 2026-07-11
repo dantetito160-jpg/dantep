@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dante W. Mamani Tito – Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: white;
+        color: #0a1a3c;
+    }
+
+    header {
+        background: #0a1a3c;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #e6f0ff;
+        padding: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #0a1a3c;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 40px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: #e6f0ff;
+        border-radius: 10px;
+    }
+
+    .lang-btn {
+        background: #0a1a3c;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .resume-btn {
+        background: #0a1a3c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 3px solid #0a1a3c;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0a1a3c;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = el.dataset.lang === lang ? "block" : "none";
+    });
+}
+</script>
+
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dante W. Mamani – Resume</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f4f4;
+        color: #0a1a3c;
+        padding: 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+        color: #0a1a3c;
+        margin-bottom: 10px;
+    }
+    h2 {
+        border-bottom: 2px solid #0a1a3c;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    .section {
+        margin-bottom: 25px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Dante W. Mamani</h1>
+    <p>Davie, FL 33324 | (954) 214-8348 | dmama003@fiu.edu</p>
+
+    <div class="section">
+        <h2>Education</h2>
+
+        <h3>Florida International University (FIU), Miami, FL</h3>
+        <p><strong>Bachelor’s in Mechanical Engineering</strong> — April 2026</p>
+
+        <p><strong>Relevant Coursework:</strong></p>
+        <ul>
+            <li>Statics (EGN 3311)</li>
+            <li>Introduction to CAD for Mechanical Engineering (EML 1533)</li>
+            <li>Thermodynamics (EGN 3343)</li>
+            <li>Manufacturing Processes (EIN 3390)</li>
+            <li>Mechanical Design I & II (EML 3500 / EML 4501)</li>
+            <li>Dynamics (EGN 3321)</li>
+        </ul>
+
+        <h3>Broward College, Davie, FL</h3>
+        <p><strong>Associate of Arts Degree</strong> — April 2023</p>
+        <p><strong>Relevant Coursework:</strong></p>
+        <ul>
+            <li>Differential Equations (MAP 2302)</li>
+        </ul>
+
+        <h3>Rey de Reyes, Arequipa, Peru</h3>
+        <p><strong>High School</strong> — December 2018</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+
+        <h3>Espumas Wflex Del Peru, Arequipa, Peru</h3>
+        <p><strong>Operations Support</strong> — May 2023 – July 2023</p>
+        <ul>
+            <li>Oversaw foam bed inventory flow by verifying quantities produced, shipped, and received.</li>
+            <li>Facilitated basic sales tasks including product organization and customer pickup preparation.</li>
+            <li>Provided customer service during high‑demand periods.</li>
+        </ul>
+
+        <h3>Dicosur, Arequipa, Peru</h3>
+        <p><strong>Personal Assistant (Volunteer / Occasional)</strong> — April 2017 – March 2019</p>
+        <ul>
+            <li>Executed daily operational tasks including product organization and customer support.</li>
+            <li>Maintained workspace organization and prepared items for customer needs.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Projects Experience</h2>
+
+        <h3>Water Distillation System — Miami, FL</h3>
+        <p><strong>Mechanical Engineering Student – Research & Analysis Engineer</strong> — Sept 2025 – Apr 2026</p>
+        <ul>
+            <li>Calculated heat‑transfer requirements, material performance, and energy input for phase change.</li>
+            <li>Estimated flow rate, production time, and system efficiency for prototype design.</li>
+            <li>Created engineering drawings using SolidWorks.</li>
+        </ul>
+
+        <h3>Gear Pump Design — Mechanical Design II, Miami, FL</h3>
+        <p><strong>Mechanical Engineering Student (Design & Analysis)</strong> — Aug 2025 – Nov 2025</p>
+        <ul>
+            <li>Designed and modeled a functional gear pump using SolidWorks.</li>
+            <li>Performed stress distribution analysis and system optimization.</li>
+        </ul>
+
+        <h3>Solar Powered Reverse Osmosis Desalination System — Miami, FL</h3>
+        <p><strong>Mechanical Engineering Student – Research & Analysis Engineer</strong> — Aug 2025 – Nov 2025</p>
+        <ul>
+            <li>Formulated a modular seawater RO plant producing 16.5 million gallons/day.</li>
+            <li>Configured 2,368 RO membranes across 16 systems with mixed‑flow pump setups.</li>
+            <li>Developed system layout based on RO operating ranges and desalination literature.</li>
+            <li>Integrated solar energy concepts for sustainable freshwater production.</li>
+            <li>Prepared conceptual cost estimation using standardized bid structure.</li>
+            <li>Evaluated large‑scale water resource challenges and engineering feasibility.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Engineering Sketching</li>
+            <li>Technical Drawing</li>
+            <li>Microsoft Excel, PowerPoint, Word</li>
+            <li>CAD Modeling (SolidWorks, Onshape)</li>
+            <li>Python (simulations and calculations)</li>
+            <li>MATLAB (calculations)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>Spanish (verbal and written)</li>
+            <li>English (verbal and written)</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
